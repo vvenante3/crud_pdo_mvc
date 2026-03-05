@@ -24,13 +24,12 @@
             }
             catch(PDOException $e)
             {
-                echo "Erro!";
+                echo "Erro!" . $e->getMessage();
+                die();
             }
         }
     }
 
-    
-
-
+    $testConnection = new Connect();
 
 ?>
