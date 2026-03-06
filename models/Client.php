@@ -2,13 +2,13 @@
 
 <?php
 
-require_once('./configuration/connect.php');
+require_once(__DIR__ . '/../configuration/connect.php');
 
     class ClientModel extends Connect
     {
         private $table;
 
-        function __construc()
+        function __construct()
         {
             parent::__construct(); // vai "invocar" o __construc de connect.php -> abrir conexão com Db
             $this->table = 'clients';

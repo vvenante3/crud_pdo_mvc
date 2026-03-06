@@ -1,12 +1,12 @@
 <?php
 
-require_once('./models');
+require_once(__DIR__ . '/../models/Client.php');
 
 Class ClientsController
 {
     private $model;
 
-    function __construc()
+    function __construct()
     {
         $this->model = new ClientModel();
     }
